@@ -70,8 +70,9 @@ Scoring might be done during the search process, or a posteriori.
 - Refinement?
   - Molecular Dynamics, ...
 
-<div class="pull-right-50 text-center">
 </div>
+
+<div class="pull-right-50 text-center">
 <img src="assets/strategy.png" style="width:90%;" class="fancyimage"/>
 </div>
 
