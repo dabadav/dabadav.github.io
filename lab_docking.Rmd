@@ -83,19 +83,22 @@ Small-molecule docking
 
 - **Molecular Docking**
   - Prediction of 3D structure of ligand-protein or protein-protein complexes.
-  - One receptor – one or few ligands
+  - *One receptor – one or few ligands*
   - Quality of the structure is the main objective. Realistic binding energies
   - Usually combined with other techniques, as MD
   - Experimental information can be considered
+
 - **Virtual screening**
   - Identification of possible ligands from compound databases
-  - One receptor – multiple ligands (> 10^6)
+  - *One receptor – multiple ligands (> 10^6)*
   - Calculation should be fast (>10000 ligand-receptor dockings / day / proc.)
   - The main objective is to select “some” ligands, that can be optimized with other methods
+
 - **Reverse Screening**
   - Identification of possible receptors for a known ligand
-  - One ligand - multiple receptors
+  - *One ligand - multiple receptors*
   - Points to possible side effects
+
 - **Active site prediction**
   - Identification of binding regions
 
