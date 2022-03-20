@@ -343,9 +343,6 @@ div.tocify {
 <li>
   <a href="home_precourse.html">Precourse</a>
 </li>
-<li>
-  <a href="home_info.html">Info</a>
-</li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -370,8 +367,8 @@ div.tocify {
 - Understanding interactions, roles of specific amino acids, design of mutations and changes of activity.
 - Comparison of affinities of different molecules
 - Drug design</p>
-<div id="docking-types-strategy" class="section level1">
-<h1><span class="header-section-number">1</span> Docking types &amp; strategy</h1>
+<div id="molecular-docking-types" class="section level1">
+<h1><span class="header-section-number">1</span> Molecular Docking types</h1>
 <p>Docking approaches have to deal with the conformational changes between unbound and bound structures.</p>
 <ul>
 <li>Bound vs Unbound
@@ -396,41 +393,40 @@ div.tocify {
 <li>Local: if binding site is known, we just need to orient the ligand in the binding site.</li>
 </ul></li>
 </ul>
-<div id="strategy" class="section level2">
-<h2><span class="header-section-number">1.1</span> Strategy</h2>
+</div>
+<div id="docking-strategy" class="section level1">
+<h1><span class="header-section-number">2</span> Docking Strategy</h1>
 <ul>
 <li>Protein representation</li>
 <li>Search method</li>
 <li>Scoring method
 <ul>
-<li>When to score
-<ul>
 <li>Score associated to the search process</li>
 <li>Scoring a posteriori</li>
-</ul></li>
+</ul>
+<ol style="list-style-type: decimal">
 <li>Structural complementarity
 <ul>
 <li>Robust, low resolution</li>
 </ul></li>
-<li>Classical force-fields, Statistical Pot.
+<li>Classical force-fields, Statistical Potentials
 <ul>
 <li>High resolution</li>
 <li>Easy to transfer</li>
 </ul></li>
-<li>Empirical functions
+<li>Empirical functions</li>
+</ol>
 <ul>
 <li>DGbind obtained from function fitted to experimental data</li>
-</ul></li>
+<li>Based on vdW, electrostatic, hydrogen bonds, desolvation, enthropy, hydrophobicy, …</li>
+<li>Reproducing affinity of ligation</li>
 </ul></li>
 <li>Refinement?</li>
 </ul>
 </div>
-</div>
-<div id="protein-docking" class="section level1">
-<h1><span class="header-section-number">2</span> Protein docking</h1>
-</div>
 <div id="ligand-protein-docking" class="section level1">
 <h1><span class="header-section-number">3</span> Ligand-Protein Docking</h1>
+<p>Small-molecule docking</p>
 <ul>
 <li><strong>Molecular Docking</strong>
 <ul>
@@ -468,8 +464,46 @@ div.tocify {
 <p>• Flexibility (Ligand and receptor)
 - Ensembl docking</p>
 </div>
+<div id="protein-docking" class="section level1">
+<h1><span class="header-section-number">4</span> Protein docking</h1>
+<ul>
+<li>Large systems: contact area: 1500-3000 A2</li>
+<li>Large num of degrees of freedom + Large conformational flexibility</li>
+<li>Few “easy” interactions
+<ul>
+<li>Hydrophobic contacts</li>
+<li>Average 1 H-bond / 170A^2</li>
+<li>1 water / 100 A2</li>
+</ul></li>
+</ul>
+<p>BASIC STRATEGIES
+- <strong>“Pure” Ab initio docking</strong>
+- Only information about ligand and receptor structures is known
+- Pseudo-random approaches (simulation, optimization)
+- Directed search (Geometric hashing)
+- Brute-Force approaches (Grid-based, FFT)</p>
+<ul>
+<li><strong>Data driven docking (template based)</strong>
+<ul>
+<li>Experimental, homology data is used
+<ul>
+<li>Template based, using data from homologues</li>
+</ul></li>
+<li>Co-evolution methods (AlphaFold)
+<ul>
+<li>Protein structure prediction</li>
+<li>Uses data from “massive” MSA (Multiple Seq Alignment) and correlated mutations to define correlated positions &gt; 3D contacts (predicted contacts become restrains)<br />
+</li>
+</ul></li>
+<li>Interface prediction
+<ul>
+<li>Reveal interfaces without structure prediction</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
 <div id="conclusion" class="section level1">
-<h1><span class="header-section-number">4</span> Conclusion</h1>
+<h1><span class="header-section-number">5</span> Conclusion</h1>
 <ul>
 <li>Protein docking works
 <ul>
