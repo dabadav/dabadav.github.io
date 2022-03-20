@@ -24,19 +24,19 @@ This prediction might be useful to:
 
 Docking approaches have to deal with the conformational changes between unbound and bound structures.
 
-- Bound vs Unbound
+**Bound vs Unbound**
   - Bound: goal is to reproduce a known complex where the starting coordinates of the individual molecules are taken from the crystal of the complex
   - Unbound: significantly more difficult problem, the starting coordinates are taken from the unbound molecules
 
 Early algorithms in order to be faster assumed that docked molecules do not change conformations, treating them as rigid bodies.
 
-- Flexible vs Rigid
+**Flexible vs Rigid**
   - Rigid: procedures that perform rigid body search
   - Felxible: procedures that consider possible conformational changes (protein flexibility)
 
 Whether the binding site of molecules is known or not the search space will vary. Global docking ismore demanding in terms of computational time and the results are less accurate.
 
-- Global vs Local
+**Global vs Local**
   - Global: search for the location of the binding site and a search to figure out the exact  orientation of the ligand in the binding site.
   - Local: if binding site is known, we just need to orient the ligand in the binding site.
 
