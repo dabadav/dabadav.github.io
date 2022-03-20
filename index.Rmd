@@ -20,7 +20,7 @@ output:
 
 <div class="landing-left">
 <div class="landing-subtitle">
-## NBIS • Workshop
+## • Dabadav •
 </div>
 <div class="landing-title">
 # Rmarkdown website template for workshops
