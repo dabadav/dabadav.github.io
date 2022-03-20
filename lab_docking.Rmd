@@ -29,12 +29,16 @@ Docking approaches have to deal with the conformational changes between unbound 
   - Bound: goal is to reproduce a known complex where the starting coordinates of the individual molecules are taken from the crystal of the complex
   - Unbound: significantly more difficult problem, the starting coordinates are taken from the unbound molecules
 
+<br>
+
 Early algorithms in order to be faster assumed that docked molecules do not change conformations, treating them as rigid bodies.
 
 **Flexible vs Rigid**
 
   - Rigid: procedures that perform rigid body search
   - Felxible: procedures that consider possible conformational changes (protein flexibility)
+
+<br>
 
 Whether the binding site of molecules is known or not the search space will vary. Global docking ismore demanding in terms of computational time and the results are less accurate.
 
@@ -155,7 +159,7 @@ Only information about ligand and receptor structures is known
     
     Less efficient for pure blind docking (better with additional information) 
 
-    <img src="assets/geometrichashing.png" style="width:100%;" class="fancyimage"/>
+    <img src="assets/geometrichashing.png" style="width:80%;" class="fancyimage"/>
 
   - **Brute-Force approaches (Grid-based, FFT)**
 
@@ -170,7 +174,7 @@ Only information about ligand and receptor structures is known
     
     Computational cost can decrease by >10^4 (from N^6 to N^3lnN^3) 
 
-    <img src="assets/gridmethod.png" style="width:100%;" class="fancyimage"/>
+    <img src="assets/gridmethod.png" style="width:80%;" class="fancyimage"/>
 
 ADDITIONAL TRICKS 
 
@@ -203,7 +207,7 @@ ADDITIONAL TRICKS
   - **Homology/threading based methods**
     - Template based, using data from homologues (experimental)
   
-    <img src="assets/template_based.png" style="width:100%;" class="fancyimage"/>
+    <img src="assets/template_based.png" style="width:80%;" class="fancyimage"/>
 
   - **Co-evolution methods (AlphaFold)**
     - Protein structure prediction 
@@ -213,18 +217,18 @@ ADDITIONAL TRICKS
   
   - **Interface prediction** 
 
-    The hot-spot/O-ring model. Hot-spots make the real interactions, O-Ring (residues sourrounding the hot-spot) help to exclude solvent.
-      
-    - Reveal interfaces without structure prediction
-    - Detecting solvent excluding (hydrophobic) regions help to detect interfaces
-    - Residue packing at the interface is similar to protein core.
-    - Residue conservation does not help (except for specific interactions)
-    - Amino acid composition
-    - Interface propensities (statistical models)
-    - Machine learning approaches
-    - Definition of interface residues on training structures is key
-    - Geometric (Distance based)
-    - Optimal Docking Area (ODA), based in desolvation energy (ASA)
+      The hot-spot/O-ring model. Hot-spots make the real interactions, O-Ring (residues sourrounding the hot-spot) help to exclude solvent.
+        
+      - Reveal interfaces without structure prediction
+      - Detecting solvent excluding (hydrophobic) regions help to detect interfaces
+      - Residue packing at the interface is similar to protein core.
+      - Residue conservation does not help (except for specific interactions)
+      - Amino acid composition
+      - Interface propensities (statistical models)
+      - Machine learning approaches
+      - Definition of interface residues on training structures is key
+      - Geometric (Distance based)
+      - Optimal Docking Area (ODA), based in desolvation energy (ASA)
 
     <img src="assets/oda.png" style="width:100%;" class="fancyimage"/>
 
