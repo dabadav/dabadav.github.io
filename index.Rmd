@@ -26,11 +26,9 @@ output:
 # Personal website
 </div>
 <div class="landing-features">
-- Run R scripts during build
-- Bootstrap framework
-- Icons from FontAwesome
-- Xaringan slides for presentations
-- Auto rendering using GitHub actions
+- Fun documentation
+- Lots of nonsense
+- And much more
 </div>
 </div>
 

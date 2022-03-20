@@ -23,6 +23,12 @@ command
 
 <br>
 
+# Docking
+
+It is a good idea to learn about docking :), So FUN!
+
+* [Markdown](lab_docking.html)
+
 # Markdown
 
 It is a good idea to familiarise yourself with basic markdown formatting.
@@ -40,16 +46,5 @@ This section continues with incorporation of R code into markdown.
 More examples of advanced usage of markdown, Rmarkdown and HTML.
 
 * [Advanced Rmarkdown](lab_rmdadv.html)
-
-# Xaringan Slides
-
-Demonstration of xaringan slides.
-
-* [Xaringan basics](slide_simple.html)  
-* [Xaringan full demo](slide_demo.html)  
-
-# Using this repo for courses
-
-* [Usage guide](lab_usage.html)
 
 ***

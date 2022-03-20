@@ -11,16 +11,32 @@ Docking is the prediction the structure of complexes such as: Protein-Ligand, Pr
 
 In order for these complexes to be formed, their integrants need to recognize each other in a selective and dynamic way, this is achieved by structural complementarity.
 
+This prediction might be useful to:
+- Understanding interactions, roles of specific amino acids, design of mutations and  changes of activity.
+- Comparison of affinities of different molecules
+- Drug design
+
 
 # Docking types & strategy
 
-Docking approaches have to deal with the conformational changes between unbound and bound structures,
+Docking approaches have to deal with the conformational changes between unbound and bound structures.
 
 - Bound vs Unbound
   - Bound: goal is to reproduce a known complex where the starting coordinates of the individual molecules are taken from the crystal of the complex
   - Unbound: significantly more difficult problem, the starting coordinates are taken from the unbound molecules
 
+Early algorithms in order to be faster assumed that docked molecules do not change conformations, treating them as rigid bodies.
 
+- Flexible vs Rigid
+  - Rigid: procedures that perform rigid body search
+  - Felxible: procedures that consider possible conformational changes (protein flexibility)
+
+## Strategy
+
+- Protein representation
+- Search method
+- Scoring method
+- Refinement?
 
 # Protein docking
 
