@@ -76,8 +76,9 @@ Whether the binding site of molecules is known or not the search space will vary
 <img src="assets/strategy.png" style="width:90%;" class="fancyimage"/>
 </div>
 
-<br></br>
-<br></br>
+<br>
+<br>
+<br>
 
 # Ligand-Protein Docking
 
