@@ -234,7 +234,7 @@ ADDITIONAL TRICKS
 
 **Good docking criteria**
 
-- Low Free Energy (!?)
+- Low Free Energy
 - Low pseudo-energy (Scoring)
 - Large Surface burial ( 1,600 ± 400 Å?)
 - Low VdW overlaps
