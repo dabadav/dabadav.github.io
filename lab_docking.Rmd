@@ -257,7 +257,11 @@ Successful prediction should assign good scores to low RMSD complexes
 
 - Protein docking works
   - (Much less efficient than ligand docking)
+
 - Lots of methods exists, no clear winner
+
 - Data-driven methods can generate better models if data is available
+
 - Flexibility, conformational changes are the major problems
+
 - Interface and interaction predictions (without docking) are possible and useful
