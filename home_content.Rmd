@@ -27,7 +27,7 @@ command
 
 It is a good idea to learn about docking :), So FUN!
 
-* [Markdown](lab_docking.html)
+* [Docking](lab_docking.html)
 
 # Markdown
 

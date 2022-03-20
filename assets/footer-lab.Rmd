@@ -8,7 +8,7 @@ title: "&nbsp;"
 
 <div class="col-sm-8" style="text-align:left;vertical-align:middle;">
 <p class="small" style="color:#bdbdbd;">
-<b>2021</b> • [NBIS](https://nbis.se/) • [SciLifeLab](https://www.scilifelab.se/)
+<b>2021</b> • dabadav •
 </p>
 </div>
 
@@ -16,13 +16,10 @@ title: "&nbsp;"
 <p style="color:#bdbdbd;">
 <span>
 <span class="footericon" style="padding-right:4px; padding-left:4px">
-<a href="https://nbis.se/">`r fontawesome::fa("globe-americas",fill="#bdbdbd")`</a>
-</span>
-<span class="footericon" style="padding-right:4px; padding-left:4px">
-<a href="https://twitter.com/NBISwe">`r fontawesome::fa("twitter",fill="#bdbdbd")`</a>
+<a href="https://twitter.com/xiluum">`r fontawesome::fa("twitter",fill="#bdbdbd")`</a>
 </span>
 <span class="footericon" style="padding-left:4px">
-<a href="https://www.linkedin.com/company/nbisweden/">`r fontawesome::fa("linkedin",fill="#bdbdbd")`</a>
+<a href="https://www.linkedin.com/in/dante-avi%C3%B1%C3%B3-mart%C3%ADnez-3a0485229/">`r fontawesome::fa("linkedin",fill="#bdbdbd")`</a>
 </span>
 </span>
 </p>
