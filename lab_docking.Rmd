@@ -70,9 +70,9 @@ Scoring might be done during the search process, or a posteriori.
 - Refinement?
   - Molecular Dynamics, ...
 
-</div>
 <div class="pull-right-50 text-center">
 <img src="assets/strategy.png" style="width:80%;" class="fancyimage"/>
+</div>
 </div>
 
 
@@ -113,6 +113,12 @@ Small-molecule docking
 
 # Protein docking
 
+The approaches to protein-protein docking have a lot in common with small molecule docking
+
+Still based on the combination of search algorithm coupled to a scoring function
+
+Scoring functions are essentially the same (since we are still dealing with atomic interactions), however the major problem is that the conformational space we now need to search is massive
+
 - Large systems: contact area: 1500-3000 A2 
 - Large num of degrees of freedom + Large conformational flexibility 
 - Few "easy" interactions 
@@ -122,10 +128,10 @@ Small-molecule docking
 
 ## "Pure" Ab initio docking 
 
-  - Only information about ligand and receptor structures is known 
-    - Pseudo-random approaches (simulation, optimization) 
-    - Directed search (Geometric hashing) 
-    - Brute-Force approaches (Grid-based, FFT) 
+- Only information about ligand and receptor structures is known 
+  - Pseudo-random approaches (simulation, optimization) 
+  - Directed search (Geometric hashing) 
+  - Brute-Force approaches (Grid-based, FFT) 
 
 ADDITIONAL TRICKS 
 
