@@ -53,7 +53,7 @@ Whether the binding site of molecules is known or not the search space will vary
 
 3. Scoring method
 
-During the search process, or a posteriori.
+  During the search process, or a posteriori.
 
   - Structural complementarity
       - Robust, low resolution
@@ -183,9 +183,11 @@ ADDITIONAL TRICKS
 
 ## Data driven docking (template based) 
 
-  - Experimental, homology data is used
-    - Template based, using data from homologues 
+  - Homology/threading based methods
+    - Template based, using data from homologues (experimental)
   
+    <img src="assets/template_based.png" style="width:100%;" class="fancyimage"/>
+
   - Co-evolution methods (AlphaFold)
     - Protein structure prediction 
     - Uses data from "massive" MSA (Multiple Seq Alignment) and correlated mutations to define  correlated positions > 3D contacts (predicted contacts become restrains)
@@ -193,7 +195,21 @@ ADDITIONAL TRICKS
     <img src="assets/coevolution.png" style="width:100%;" class="fancyimage"/>
   
   - Interface prediction 
-    - Reveal interfaces without structure prediction 
+
+  The hot-spot/O-ring model. Hot-spots make the real interactions, O-Ring (residues sourrounding the hot-spot) help to exclude solvent.
+      
+      - Reveal interfaces without structure prediction 
+      - Detecting solvent excluding (hydrophobic) regions help to detect interfaces
+      - Residue packing at the interface is similar to protein core.
+      - Residue conservation does not help (except for specific interactions)
+      - Amino acid composition
+      - Interface propensities (statistical models)
+      - Machine learning approaches
+      - Definition of interface residues on training structures is key
+      - Geometric (Distance based)
+      - Optimal Docking Area (ODA), based in desolvation energy (ASA)
+
+    <img src="assets/oda.png" style="width:100%;" class="fancyimage"/>
 
 # Conclusion
 
