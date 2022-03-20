@@ -49,6 +49,7 @@ Whether the binding site of molecules is known or not the search space will vary
 
 # Docking Strategy
 
+<div>
 <div class="pull-left-50">
 
 1. Protein representation
@@ -79,9 +80,8 @@ Whether the binding site of molecules is known or not the search space will vary
 <div class="pull-right-50 text-center">
 <img src="assets/strategy.png" style="width:90%;" class="fancyimage"/>
 </div>
+</div>
 
-<br>
-<br>
 <br>
 
 # Ligand-Protein Docking
@@ -92,25 +92,25 @@ The general problem includes a search for the location of the binding site and a
 
 Sometimes the location of the binding site is known. In this case we only need to orient the ligand in the binding site (Local docking).
 
-- **Molecular Docking**
+**Molecular Docking**
   - Prediction of 3D structure of ligand-protein or protein-protein complexes.
   - *One receptor – one or few ligands*
   - Quality of the structure is the main objective. Realistic binding energies
   - Usually combined with other techniques, as MD
   - Experimental information can be considered
 
-- **Virtual screening**
+**Virtual screening**
   - Identification of possible ligands from compound databases
   - *One receptor – multiple ligands (> 10^6)*
   - Calculation should be fast (>10000 ligand-receptor dockings / day / proc.)
   - The main objective is to select “some” ligands, that can be optimized with other methods
 
-- **Reverse Screening**
+**Reverse Screening**
   - Identification of possible receptors for a known ligand
   - *One ligand - multiple receptors*
   - Points to possible side effects
 
-- **Active site prediction**
+**Active site prediction**
   - Identification of binding regions
 
 • Complete atomic representation
@@ -147,34 +147,34 @@ This technique works better with complexes with larger buried interfaces (hydrop
 
 Only information about ligand and receptor structures is known
 
-  - **Pseudo-random approaches (simulation, optimization)**
+- **Pseudo-random approaches (simulation, optimization)**
 
-  - **Directed search (Geometric hashing)**
+- **Directed search (Geometric hashing)**
 
-    Geometric hash, surface are pre-processed to detect possible matching regions 
-    
-    Solvation/desolvation can be mapped into **Surface properties** 
-    
-    Most favourable poses are **re-scored** with better scoring functions 
-    
-    Less efficient for pure blind docking (better with additional information) 
+  Geometric hash, surface are pre-processed to detect possible matching regions 
+  
+  Solvation/desolvation can be mapped into **Surface properties** 
+  
+  Most favourable poses are **re-scored** with better scoring functions 
+  
+  Less efficient for pure blind docking (better with additional information) 
 
-    <img src="assets/geometrichashing.png" style="width:80%;" class="fancyimage"/>
+  <img src="assets/geometrichashing.png" style="width:80%;" class="fancyimage"/>
 
-  - **Brute-Force approaches (Grid-based, FFT)**
+- **Brute-Force approaches (Grid-based, FFT)**
 
-    Proteins mapped onto 3D grid. Each rid point is evaluated as inner, surface, outer. 
-    
-    Blind 6Dim (3 translations x 3 rotations) search
+  Proteins mapped onto 3D grid. Each rid point is evaluated as inner, surface, outer. 
+  
+  Blind 6Dim (3 translations x 3 rotations) search
 
-    Score is based in 3D complementarity: I.e. matches among the "Surface" points (fast bit-wise arithmetic) 
-    
-    Fast Fourier Transforms to speed up translational (FTT) or rotational (Spherical Polar 
-    Fourier, SPF) searches. 
-    
-    Computational cost can decrease by >10^4 (from N^6 to N^3lnN^3) 
+  Score is based in 3D complementarity: I.e. matches among the "Surface" points (fast bit-wise arithmetic) 
+  
+  Fast Fourier Transforms to speed up translational (FTT) or rotational (Spherical Polar 
+  Fourier, SPF) searches. 
+  
+  Computational cost can decrease by >10^4 (from N^6 to N^3lnN^3) 
 
-    <img src="assets/gridmethod.png" style="width:80%;" class="fancyimage"/>
+  <img src="assets/gridmethod.png" style="width:80%;" class="fancyimage"/>
 
 ADDITIONAL TRICKS 
 
@@ -204,33 +204,33 @@ ADDITIONAL TRICKS
 
 ## Data driven docking (template based) 
 
-  - **Homology/threading based methods**
-    - Template based, using data from homologues (experimental)
+- **Homology/threading based methods**
+  - Template based, using data from homologues (experimental)
+
+  <img src="assets/template_based.png" style="width:80%;" class="fancyimage"/>
+
+- **Co-evolution methods (AlphaFold)**
+  - Protein structure prediction 
+  - Uses data from "massive" MSA (Multiple Seq Alignment) and correlated mutations to define  correlated positions > 3D contacts (predicted contacts become restrains)
   
-    <img src="assets/template_based.png" style="width:80%;" class="fancyimage"/>
+  <img src="assets/coevolution.png" style="width:100%;" class="fancyimage"/>
 
-  - **Co-evolution methods (AlphaFold)**
-    - Protein structure prediction 
-    - Uses data from "massive" MSA (Multiple Seq Alignment) and correlated mutations to define  correlated positions > 3D contacts (predicted contacts become restrains)
-    
-    <img src="assets/coevolution.png" style="width:100%;" class="fancyimage"/>
-  
-  - **Interface prediction** 
+- **Interface prediction** 
 
-      The hot-spot/O-ring model. Hot-spots make the real interactions, O-Ring (residues sourrounding the hot-spot) help to exclude solvent.
-        
-      - Reveal interfaces without structure prediction
-      - Detecting solvent excluding (hydrophobic) regions help to detect interfaces
-      - Residue packing at the interface is similar to protein core.
-      - Residue conservation does not help (except for specific interactions)
-      - Amino acid composition
-      - Interface propensities (statistical models)
-      - Machine learning approaches
-      - Definition of interface residues on training structures is key
-      - Geometric (Distance based)
-      - Optimal Docking Area (ODA), based in desolvation energy (ASA)
+    The hot-spot/O-ring model. Hot-spots make the real interactions, O-Ring (residues sourrounding the hot-spot) help to exclude solvent.
+      
+    - Reveal interfaces without structure prediction
+    - Detecting solvent excluding (hydrophobic) regions help to detect interfaces
+    - Residue packing at the interface is similar to protein core.
+    - Residue conservation does not help (except for specific interactions)
+    - Amino acid composition
+    - Interface propensities (statistical models)
+    - Machine learning approaches
+    - Definition of interface residues on training structures is key
+    - Geometric (Distance based)
+    - Optimal Docking Area (ODA), based in desolvation energy (ASA)
 
-    <img src="assets/oda.png" style="width:100%;" class="fancyimage"/>
+  <img src="assets/oda.png" style="width:100%;" class="fancyimage"/>
 
 # Performance assessment
 
