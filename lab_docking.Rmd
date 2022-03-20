@@ -53,19 +53,19 @@ Whether the binding site of molecules is known or not the search space will vary
 
 3. Scoring method
 
-  During the search process, or a posteriori.
+    During the search process, or a posteriori.
 
-  - Structural complementarity
-      - Robust, low resolution
+    - Structural complementarity
+        - Robust, low resolution
 
-  - Classical force-fields, Statistical Potentials
-      - High resolution
-      - Easy to transfer
+    - Classical force-fields, Statistical Potentials
+        - High resolution
+        - Easy to transfer
 
-  - Empirical functions
-    - DGbind obtained from function fitted to experimental data
-    - Based on vdW, electrostatic, hydrogen bonds, desolvation, enthropy, hydrophobicy, ...
-    - Reproducing affinity of ligation
+    - Empirical functions
+      - DGbind obtained from function fitted to experimental data
+      - Based on vdW, electrostatic, hydrogen bonds, desolvation, enthropy, hydrophobicy, ...
+      - Reproducing affinity of ligation
 
 4. Refinement?
   - Molecular Dynamics, ...
@@ -143,28 +143,40 @@ This technique works better with complexes with larger buried interfaces (hydrop
 
 Only information about ligand and receptor structures is known
 
-  - Pseudo-random approaches (simulation, optimization)
+  - **Pseudo-random approaches (simulation, optimization)**
 
-  - Directed search (Geometric hashing) 
+  - **Directed search (Geometric hashing)**
 
-Geometric hash, surface are pre-processed to detect possible matching regions 
-Solvation/desolvation can be mapped into **Surface properties** 
-Most favourable poses are **re-scored** with better scoring functions 
-Less efficient for pure blind docking (better with additional information) 
+    Geometric hash, surface are pre-processed to detect possible matching regions 
+    
+    Solvation/desolvation can be mapped into **Surface properties** 
+    
+    Most favourable poses are **re-scored** with better scoring functions 
+    
+    Less efficient for pure blind docking (better with additional information) 
 
-  - Brute-Force approaches (Grid-based, FFT) 
+    <img src="assets/geometrichashing.png" style="width:100%;" class="fancyimage"/>
 
-Proteins mapped onto 3D grid. Each rid point is evaluated as inner, surface, outer. 
-Blind 6Dim (3 translations x 3 rotations) search 
-Score is based in 3D complementarity: I.e. matches among the "Surface" points (fast bit-wise arithmetic) 
-Fast Fourier Transforms to speed up translational (FTT) or rotational (Spherical Polar Fourier, SPF) searches. 
-Computational cost can decrease by >10^4 (from N^6 to N^3lnN^3) 
+  - **Brute-Force approaches (Grid-based, FFT)**
+
+    Proteins mapped onto 3D grid. Each rid point is evaluated as inner, surface, outer. 
+    
+    Blind 6Dim (3 translations x 3 rotations) search
+
+    Score is based in 3D complementarity: I.e. matches among the "Surface" points (fast bit-wise arithmetic) 
+    
+    Fast Fourier Transforms to speed up translational (FTT) or rotational (Spherical Polar 
+    Fourier, SPF) searches. 
+    
+    Computational cost can decrease by >10^4 (from N^6 to N^3lnN^3) 
+
+    <img src="assets/gridmethod.png" style="width:100%;" class="fancyimage"/>
 
 ADDITIONAL TRICKS 
 
 **Flexible docking**
 
-- Traditional MD 
+- Traditional MD
   - Refine structures after docking
 
 - Conformational sampling 
