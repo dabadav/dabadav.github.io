@@ -42,6 +42,19 @@ Whether the binding site of molecules is known or not the search space will vary
 - Protein representation
 - Search method
 - Scoring method
+  - When to score
+    - Score associated to the search process
+    - Scoring a posteriori
+
+  - Structural complementarity
+    - Robust, low resolution
+
+  - Classical force-fields, Statistical Pot.
+    - High resolution
+    - Easy to transfer
+
+  - Empirical functions
+    - DGbind obtained from function fitted to experimental data
 - Refinement?
 
 # Protein docking
@@ -50,3 +63,43 @@ Whether the binding site of molecules is known or not the search space will vary
 
 # Ligand-Protein Docking
 
+- **Molecular Docking**
+  - Prediction of 3D structure of ligand-protein or protein-protein complexes.
+  - One receptor – one or few ligands
+  - Quality of the structure is the main objective. Realistic binding energies
+  - Usually combined with other techniques, as MD
+  - Experimental information can be considered
+- **Virtual screening**
+  - Identification of possible ligands from compound databases
+  - One receptor – multiple ligands (> 10^6)
+  - Calculation should be fast (>10000 ligand-receptor dockings / day / proc.)
+  - The main objective is to select “some” ligands, that can be optimized with other methods
+- **Reverse Screening**
+  - Identification of possible receptors for a known ligand
+  - One ligand - multiple receptors
+  - Points to possible side effects
+- **Active site prediction**
+  - Identification of binding regions
+
+• Complete atomic representation
+  - Large cost, high resolution
+
+• Simplified representations
+- Quick and robust. Low resolution.
+
+• 3D Grid representations (receptor)
+- Easier energy calculation
+- Definition of “pharmacophores” (MIPs)
+
+• Flexibility (Ligand and receptor)
+- Ensembl docking
+
+
+# Conclusion
+
+- Protein docking works
+  - (Much less efficient than ligand docking)
+- Lots of methods exists, no clear winner
+- Data-driven methods can generate better models if data is available
+- Flexibility, conformational changes are the major problems
+- Interface and interaction predictions (without docking) are possible and useful
