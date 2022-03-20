@@ -7,11 +7,11 @@ author: "`r paste0('<b>dabadav</b> • ',format(Sys.time(), '%d-%b-%Y'))`"
 ```{r,child="assets/header-lab.Rmd"}
 ```
 
-Docking is the prediction the structure of complexes such as: 
+Docking is the **prediction the structure of complexes** such as: 
 
 - Protein-Ligand, Protein-Protein, Protein-NA, NA-Ligand, NA-NA
 
-In order for these complexes to be formed, their integrants need to recognize each other in a selective and dynamic way, this is achieved by structural complementarity.
+In order for these complexes to be formed, their integrants need to recognize each other in a **selective** and dynamic way, this is achieved by structural complementarity.
 
 This prediction might be useful to:
 
@@ -108,19 +108,25 @@ Small-molecule docking
   - Average 1 H-bond / 170A^2 
   - 1 water / 100 A2 
 
-BASIC STRATEGIES 
-- **"Pure" Ab initio docking** 
+## BASIC STRATEGIES 
+**"Pure" Ab initio docking** 
+
   - Only information about ligand and receptor structures is known 
     - Pseudo-random approaches (simulation, optimization) 
     - Directed search (Geometric hashing) 
     - Brute-Force approaches (Grid-based, FFT) 
 
-- **Data driven docking (template based)** 
+**Data driven docking (template based)** 
+
   - Experimental, homology data is used
     - Template based, using data from homologues 
+  
   - Co-evolution methods (AlphaFold)
     - Protein structure prediction 
-    - Uses data from "massive" MSA (Multiple Seq Alignment) and correlated mutations to define  correlated positions > 3D contacts (predicted contacts become restrains)  
+    - Uses data from "massive" MSA (Multiple Seq Alignment) and correlated mutations to define  correlated positions > 3D contacts (predicted contacts become restrains)
+    
+    <img src="assets/coevolution.png" style="width:100%;" class="fancyimage"/>
+  
   - Interface prediction 
     - Reveal interfaces without structure prediction 
 
