@@ -42,47 +42,26 @@ Whether the binding site of molecules is known or not the search space will vary
 - Protein representation
 - Search method
 - Scoring method
-  - When to score
-    - Score associated to the search process
-    - Scoring a posteriori
+  - Score associated to the search process
+  - Scoring a posteriori
+  
+  1. Structural complementarity
+      - Robust, low resolution
 
-  - Structural complementarity
-    - Robust, low resolution
+  2. Classical force-fields, Statistical Potentials
+      - High resolution
+      - Easy to transfer
 
-  - Classical force-fields, Statistical Pot.
-    - High resolution
-    - Easy to transfer
-
-  - Empirical functions
+  3. Empirical functions
     - DGbind obtained from function fitted to experimental data
+    - Based on vdW, electrostatic, hydrogen bonds, desolvation, enthropy, hydrophobicy, ...
+    - Reproducing affinity of ligation
+  
 - Refinement?
 
-# Protein docking
-
-- Large systems: contact area: 1500-3000 A2 
-- Large num of degrees of freedom + Large conformational flexibility 
-- Few "easy" interactions 
-  - Hydrophobic contacts 
-  - Average 1 H-bond / 170A^2 
-  - 1 water / 100 A2 
-
-BASIC STRATEGIES 
-- "Pure" Ab initio docking: 
-  - Only information about ligand and receptor structures is known 
-    - Pseudo-random approaches (simulation, optimization) 
-    - Directed search (Geometric hashing) 
-    - Brute-Force approaches (Grid-based, FFT) 
-
-- Data driven docking (template based) 
-  - Experimental, homology data is used
-    - Template based, using data from homologues 
-  - Co-evolution methods (AlphaFold)
-    - Protein structure prediction 
-    - Uses data from "massive" MSA (Multiple Seq Alignment) and correlated mutations to define  correlated positions > 3D contacts (predicted contacts become restrains)  
-  - Interface prediction 
-    - Reveal interfaces without structure prediction 
-
 # Ligand-Protein Docking
+
+Small-molecule docking
 
 - **Molecular Docking**
   - Prediction of 3D structure of ligand-protein or protein-protein complexes.
@@ -115,6 +94,30 @@ BASIC STRATEGIES
 • Flexibility (Ligand and receptor)
 - Ensembl docking
 
+# Protein docking
+
+- Large systems: contact area: 1500-3000 A2 
+- Large num of degrees of freedom + Large conformational flexibility 
+- Few "easy" interactions 
+  - Hydrophobic contacts 
+  - Average 1 H-bond / 170A^2 
+  - 1 water / 100 A2 
+
+BASIC STRATEGIES 
+- **"Pure" Ab initio docking** 
+  - Only information about ligand and receptor structures is known 
+    - Pseudo-random approaches (simulation, optimization) 
+    - Directed search (Geometric hashing) 
+    - Brute-Force approaches (Grid-based, FFT) 
+
+- **Data driven docking (template based)** 
+  - Experimental, homology data is used
+    - Template based, using data from homologues 
+  - Co-evolution methods (AlphaFold)
+    - Protein structure prediction 
+    - Uses data from "massive" MSA (Multiple Seq Alignment) and correlated mutations to define  correlated positions > 3D contacts (predicted contacts become restrains)  
+  - Interface prediction 
+    - Reveal interfaces without structure prediction 
 
 # Conclusion
 
