@@ -49,7 +49,6 @@ Whether the binding site of molecules is known or not the search space will vary
 
 # Docking Strategy
 
-<div>
 <div class="pull-left-50">
 
 1. Protein representation
@@ -80,9 +79,8 @@ Whether the binding site of molecules is known or not the search space will vary
 <div class="pull-right-50 text-center">
 <img src="assets/strategy.png" style="width:90%;" class="fancyimage"/>
 </div>
-</div>
 
-<br>
+\newpage
 
 # Ligand-Protein Docking
 
