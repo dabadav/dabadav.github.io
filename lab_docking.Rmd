@@ -44,7 +44,7 @@ Whether the binding site of molecules is known or not the search space will vary
   - Local: if binding site is known, we just need to orient the ligand in the binding site.
 
 # Docking Strategy
-<div class="pull-left-50" style="background-color: aliceblue">
+<div class="pull-left-50">
 - Protein representation
 - Search method
 - Scoring method
@@ -62,8 +62,8 @@ Scoring might be done during the search process, or a posteriori.
     - Based on vdW, electrostatic, hydrogen bonds, desolvation, enthropy, hydrophobicy, ...
     - Reproducing affinity of ligation
 </div>
-<div class="pull-right-50 text-center" style="background-color: aliceblue">
-<img src="assets/strategy.png" style="width:50%;" class="fancyimage"/>
+<div class="pull-right-50 text-center">
+<img src="assets/strategy.png" style="width:90%;" class="fancyimage"/>
 </div>
 
   
