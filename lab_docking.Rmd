@@ -43,17 +43,16 @@ Whether the binding site of molecules is known or not the search space will vary
 - Protein representation
 - Search method
 - Scoring method
-  - Score associated to the search process
-  - Scoring a posteriori
-  
-  1. Structural complementarity
+Scoring might be done during the search process, or a posteriori.
+
+  - Structural complementarity
       - Robust, low resolution
 
-  2. Classical force-fields, Statistical Potentials
+  - Classical force-fields, Statistical Potentials
       - High resolution
       - Easy to transfer
 
-  3. Empirical functions
+  - Empirical functions
     - DGbind obtained from function fitted to experimental data
     - Based on vdW, electrostatic, hydrogen bonds, desolvation, enthropy, hydrophobicy, ...
     - Reproducing affinity of ligation
