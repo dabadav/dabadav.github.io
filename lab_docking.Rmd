@@ -45,9 +45,13 @@ Whether the binding site of molecules is known or not the search space will vary
 
 # Docking Strategy
 <div class="pull-left-50">
+
 - Protein representation
+
 - Search method
+
 - Scoring method
+
 Scoring might be done during the search process, or a posteriori.
 
   - Structural complementarity
@@ -61,13 +65,15 @@ Scoring might be done during the search process, or a posteriori.
     - DGbind obtained from function fitted to experimental data
     - Based on vdW, electrostatic, hydrogen bonds, desolvation, enthropy, hydrophobicy, ...
     - Reproducing affinity of ligation
+
+- Refinement?
+
 </div>
 <div class="pull-right-50 text-center">
 <img src="assets/strategy.png" style="width:90%;" class="fancyimage"/>
 </div>
 
-  
-- Refinement?
+
 
 # Ligand-Protein Docking
 
