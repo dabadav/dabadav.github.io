@@ -23,7 +23,7 @@ output:
 ## • Dabadav •
 </div>
 <div class="landing-title">
-# Rmarkdown website template for workshops
+# Personal website
 </div>
 <div class="landing-features">
 - Run R scripts during build
