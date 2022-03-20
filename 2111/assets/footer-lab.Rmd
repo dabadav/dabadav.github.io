@@ -1,0 +1,30 @@
+---
+title: "&nbsp;"
+---
+
+<footer class="footer">
+<div class="container footer-container">
+<div class="row">
+
+<div class="col-sm-8" style="text-align:left;vertical-align:middle;">
+<p class="small" style="color:#bdbdbd;">
+<b>2021</b> • dabadav •
+</p>
+</div>
+
+<div class="col-sm-4" style="text-align:right;vertical-align:middle;">
+<p style="color:#bdbdbd;">
+<span>
+<span class="footericon" style="padding-right:4px; padding-left:4px">
+<a href="https://twitter.com/xiluum">`r fontawesome::fa("twitter",fill="#bdbdbd")`</a>
+</span>
+<span class="footericon" style="padding-left:4px">
+<a href="https://www.linkedin.com/in/dante-avi%C3%B1%C3%B3-mart%C3%ADnez-3a0485229/">`r fontawesome::fa("linkedin",fill="#bdbdbd")`</a>
+</span>
+</span>
+</p>
+</div>
+
+</div>
+</div>
+</footer>
