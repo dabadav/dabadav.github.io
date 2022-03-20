@@ -13,7 +13,7 @@ Docking is the **prediction the structure of complexes** such as:
 
 In order for these complexes to be formed, their integrants need to recognize each other in a **selective** and dynamic way, this is achieved by structural complementarity.
 
-This prediction might be useful to:
+This prediction might be **useful to**:
 
 - Understanding interactions, roles of specific amino acids, design of mutations and  changes of activity
 - Comparison of affinities of different molecules
@@ -44,7 +44,7 @@ Whether the binding site of molecules is known or not the search space will vary
   - Local: if binding site is known, we just need to orient the ligand in the binding site.
 
 # Docking Strategy
-
+<div class="pull-left-50" style="background-color: aliceblue">
 - Protein representation
 - Search method
 - Scoring method
@@ -61,6 +61,11 @@ Scoring might be done during the search process, or a posteriori.
     - DGbind obtained from function fitted to experimental data
     - Based on vdW, electrostatic, hydrogen bonds, desolvation, enthropy, hydrophobicy, ...
     - Reproducing affinity of ligation
+</div>
+<div class="pull-right-50 text-center" style="background-color: aliceblue">
+<img src="assets/strategy.png" style="width:50%;" class="fancyimage"/>
+</div>
+
   
 - Refinement?
 
