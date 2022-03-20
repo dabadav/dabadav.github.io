@@ -44,6 +44,7 @@ Whether the binding site of molecules is known or not the search space will vary
   - Local: if binding site is known, we just need to orient the ligand in the binding site.
 
 # Docking Strategy
+
 <div class="pull-left-50">
 
 - Protein representation
@@ -72,8 +73,6 @@ Scoring might be done during the search process, or a posteriori.
 <div class="pull-right-50 text-center">
 <img src="assets/strategy.png" style="width:90%;" class="fancyimage"/>
 </div>
-
-
 
 # Ligand-Protein Docking
 
