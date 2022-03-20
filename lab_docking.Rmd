@@ -68,11 +68,13 @@ Scoring might be done during the search process, or a posteriori.
     - Reproducing affinity of ligation
 
 - Refinement?
+  - Molecular Dynamics, ...
 
 </div>
 <div class="pull-right-50 text-center">
-<img src="assets/strategy.png" style="width:90%;" class="fancyimage"/>
+<img src="assets/strategy.png" style="width:80%;" class="fancyimage"/>
 </div>
+
 
 # Ligand-Protein Docking
 
@@ -118,15 +120,35 @@ Small-molecule docking
   - Average 1 H-bond / 170A^2 
   - 1 water / 100 A2 
 
-## BASIC STRATEGIES 
-**"Pure" Ab initio docking** 
+## "Pure" Ab initio docking 
 
   - Only information about ligand and receptor structures is known 
     - Pseudo-random approaches (simulation, optimization) 
     - Directed search (Geometric hashing) 
     - Brute-Force approaches (Grid-based, FFT) 
 
-**Data driven docking (template based)** 
+ADDITIONAL TRICKS 
+
+**Flexible docking**
+
+- Traditional MD 
+  - Refine structures after docking
+
+- Conformational sampling 
+  - Rigid docking with set of possible conformations (experimental)
+  - Conformational search added to position and orientation (MC)
+
+- Combined cycles of docking and simulation 
+
+- RosettaDock combines rigid body MonteCarlo orientation/traslation + Montecarlo amon other rotamer libraries (very expensive) 
+
+**Soft docking**
+
+- Backbone is still rigid 
+
+- Sidechain flexibility is mimicked using "soft" VdW potentials and/or coarser FFT grids 
+
+## Data driven docking (template based) 
 
   - Experimental, homology data is used
     - Template based, using data from homologues 
