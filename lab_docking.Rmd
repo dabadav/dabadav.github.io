@@ -104,7 +104,7 @@ Small-molecule docking
   - Identification of binding regions
 
 • Complete atomic representation
-  - Large cost, high resolution
+- Large cost, high resolution
 
 • Simplified representations
 - Quick and robust. Low resolution.
@@ -133,10 +133,26 @@ Scoring functions are essentially the same (since we are still dealing with atom
 
 ## "Pure" Ab initio docking 
 
-- Only information about ligand and receptor structures is known 
-  - Pseudo-random approaches (simulation, optimization) 
+This technique works better with complexes with larger buried interfaces (hydrophobic).
+
+Only information about ligand and receptor structures is known
+
+  - Pseudo-random approaches (simulation, optimization)
+
   - Directed search (Geometric hashing) 
+
+Geometric hash, surface are pre-processed to detect possible matching regions 
+Solvation/desolvation can be mapped into **Surface properties** 
+Most favourable poses are **re-scored** with better scoring functions 
+Less efficient for pure blind docking (better with additional information) 
+
   - Brute-Force approaches (Grid-based, FFT) 
+
+Proteins mapped onto 3D grid. Each rid point is evaluated as inner, surface, outer. 
+Blind 6Dim (3 translations x 3 rotations) search 
+Score is based in 3D complementarity: I.e. matches among the "Surface" points (fast bit-wise arithmetic) 
+Fast Fourier Transforms to speed up translational (FTT) or rotational (Spherical Polar Fourier, SPF) searches. 
+Computational cost can decrease by >10^4 (from N^6 to N^3lnN^3) 
 
 ADDITIONAL TRICKS 
 
@@ -158,6 +174,11 @@ ADDITIONAL TRICKS
 - Backbone is still rigid 
 
 - Sidechain flexibility is mimicked using "soft" VdW potentials and/or coarser FFT grids 
+
+**Docking with distance constrains**
+
+- Can be used when having additional information of specific residues in contact (hot-spots): [iFrag](https://sbi.upf.edu/web/index.php/research/servers/iFrag)
+
 
 ## Data driven docking (template based) 
 
