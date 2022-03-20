@@ -71,10 +71,11 @@ Scoring might be done during the search process, or a posteriori.
   - Molecular Dynamics, ...
 
 <div class="pull-right-50 text-center">
-<img src="assets/strategy.png" style="width:80%;" class="fancyimage"/>
 </div>
+<img src="assets/strategy.png" style="width:90%;" class="fancyimage"/>
 </div>
 
+<br></br>
 
 # Ligand-Protein Docking
 
