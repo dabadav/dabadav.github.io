@@ -17,7 +17,7 @@ This prediction might be useful to:
 - Drug design
 
 
-# Docking types & strategy
+# Molecular Docking types
 
 Docking approaches have to deal with the conformational changes between unbound and bound structures.
 
@@ -37,7 +37,7 @@ Whether the binding site of molecules is known or not the search space will vary
   - Global: search for the location of the binding site and a search to figure out the exact  orientation of the ligand in the binding site.
   - Local: if binding site is known, we just need to orient the ligand in the binding site.
 
-## Strategy
+# Docking Strategy
 
 - Protein representation
 - Search method
@@ -59,7 +59,28 @@ Whether the binding site of molecules is known or not the search space will vary
 
 # Protein docking
 
+- Large systems: contact area: 1500-3000 A2 
+- Large num of degrees of freedom + Large conformational flexibility 
+- Few "easy" interactions 
+  - Hydrophobic contacts 
+  - Average 1 H-bond / 170A^2 
+  - 1 water / 100 A2 
 
+BASIC STRATEGIES 
+- "Pure" Ab initio docking: 
+  - Only information about ligand and receptor structures is known 
+    - Pseudo-random approaches (simulation, optimization) 
+    - Directed search (Geometric hashing) 
+    - Brute-Force approaches (Grid-based, FFT) 
+
+- Data driven docking (template based) 
+  - Experimental, homology data is used
+    - Template based, using data from homologues 
+  - Co-evolution methods (AlphaFold)
+    - Protein structure prediction 
+    - Uses data from "massive" MSA (Multiple Seq Alignment) and correlated mutations to define  correlated positions > 3D contacts (predicted contacts become restrains)  
+  - Interface prediction 
+    - Reveal interfaces without structure prediction 
 
 # Ligand-Protein Docking
 
