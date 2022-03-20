@@ -73,14 +73,12 @@ Whether the binding site of molecules is known or not the search space will vary
 
 4. Refinement?
   - Molecular Dynamics, ...
-
 </div>
-
 <div class="pull-right-50 text-center">
 <img src="assets/strategy.png" style="width:90%;" class="fancyimage"/>
 </div>
 
-\newpage
+<br>
 
 # Ligand-Protein Docking
 
