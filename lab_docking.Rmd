@@ -47,13 +47,13 @@ Whether the binding site of molecules is known or not the search space will vary
 
 <div class="pull-left-50">
 
-- Protein representation
+1. Protein representation
 
-- Search method
+2. Search method
 
-- Scoring method
+3. Scoring method
 
-Scoring might be done during the search process, or a posteriori.
+During the search process, or a posteriori.
 
   - Structural complementarity
       - Robust, low resolution
@@ -67,7 +67,7 @@ Scoring might be done during the search process, or a posteriori.
     - Based on vdW, electrostatic, hydrogen bonds, desolvation, enthropy, hydrophobicy, ...
     - Reproducing affinity of ligation
 
-- Refinement?
+4. Refinement?
   - Molecular Dynamics, ...
 
 </div>
@@ -76,6 +76,7 @@ Scoring might be done during the search process, or a posteriori.
 <img src="assets/strategy.png" style="width:90%;" class="fancyimage"/>
 </div>
 
+<br></br>
 <br></br>
 
 # Ligand-Protein Docking
