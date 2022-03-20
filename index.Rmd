@@ -33,7 +33,7 @@ output:
 </div>
 
 <div class="landing-right">
-<img src="assets/landing.png">
+<img src="assets/landing.png" class="fancyimage">
 </div>
 </div>
 
