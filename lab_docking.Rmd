@@ -123,7 +123,7 @@ Still based on the combination of search algorithm coupled to a scoring function
 
 Scoring functions are essentially the same (since we are still dealing with atomic interactions), however the major problem is that the conformational space we now need to search is massive
 
-- Large systems: contact area: 1500-3000 A2 
+- Large systems: contact area: 1500-3000 A2
 - Large num of degrees of freedom + Large conformational flexibility 
 - Few "easy" interactions 
   - Hydrophobic contacts 
