@@ -211,6 +211,27 @@ ADDITIONAL TRICKS
 
     <img src="assets/oda.png" style="width:100%;" class="fancyimage"/>
 
+# Performance assessment
+
+**Good docking criteria**
+
+- Low Free Energy (!?)
+- Low pseudo-energy (Scoring)
+- Large Surface burial ( 1,600 ± 400 Å?)
+- Low VdW overlaps
+- No large cavities on the interface
+- Good H-bonding (~1HB / 100 Å²), Polar-polar contacts
+- Good charge complementarity
+
+**Assessment**
+
+The RMSD is most used parameter to evaluate the predictions with relation to known complexes
+A graph of RMSD against the score is usually given. 
+
+Successful prediction should assign good scores to low RMSD complexes
+
+<img src="assets/dockassessment.png" style="width:100%;" class="fancyimage"/>
+
 # Conclusion
 
 - Protein docking works
