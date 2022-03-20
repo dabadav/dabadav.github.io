@@ -11,7 +11,7 @@ Docking is the **prediction the structure of complexes** such as:
 
 - Protein-Ligand, Protein-Protein, Protein-NA, NA-Ligand, NA-NA
 
-In order for these complexes to be formed, their integrants need to recognize each other in a **selective** and dynamic way, this is achieved by structural complementarity.
+In order for these complexes to be formed, their integrants need to recognize each other in a **selective** and dynamic way, this is achieved by structural & chemical complementarity.
 
 This prediction might be **useful to**:
 
@@ -82,7 +82,11 @@ Whether the binding site of molecules is known or not the search space will vary
 
 # Ligand-Protein Docking
 
-Small-molecule docking
+Finding the place and the orientation of the interactions 
+
+The general problem includes a search for the location of the binding site and a search to figure out the exact orientation of the ligand in the binding site (Global docking).
+
+Sometimes the location of the binding site is known. In this case we only need to orient the ligand in the binding site (Local docking).
 
 - **Molecular Docking**
   - Prediction of 3D structure of ligand-protein or protein-protein complexes.
