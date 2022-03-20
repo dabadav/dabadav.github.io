@@ -200,31 +200,31 @@ ADDITIONAL TRICKS
 
 ## Data driven docking (template based) 
 
-  - Homology/threading based methods
+  - **Homology/threading based methods**
     - Template based, using data from homologues (experimental)
   
     <img src="assets/template_based.png" style="width:100%;" class="fancyimage"/>
 
-  - Co-evolution methods (AlphaFold)
+  - **Co-evolution methods (AlphaFold)**
     - Protein structure prediction 
     - Uses data from "massive" MSA (Multiple Seq Alignment) and correlated mutations to define  correlated positions > 3D contacts (predicted contacts become restrains)
     
     <img src="assets/coevolution.png" style="width:100%;" class="fancyimage"/>
   
-  - Interface prediction 
+  - **Interface prediction** 
 
-  The hot-spot/O-ring model. Hot-spots make the real interactions, O-Ring (residues sourrounding the hot-spot) help to exclude solvent.
+    The hot-spot/O-ring model. Hot-spots make the real interactions, O-Ring (residues sourrounding the hot-spot) help to exclude solvent.
       
-      - Reveal interfaces without structure prediction 
-      - Detecting solvent excluding (hydrophobic) regions help to detect interfaces
-      - Residue packing at the interface is similar to protein core.
-      - Residue conservation does not help (except for specific interactions)
-      - Amino acid composition
-      - Interface propensities (statistical models)
-      - Machine learning approaches
-      - Definition of interface residues on training structures is key
-      - Geometric (Distance based)
-      - Optimal Docking Area (ODA), based in desolvation energy (ASA)
+    - Reveal interfaces without structure prediction
+    - Detecting solvent excluding (hydrophobic) regions help to detect interfaces
+    - Residue packing at the interface is similar to protein core.
+    - Residue conservation does not help (except for specific interactions)
+    - Amino acid composition
+    - Interface propensities (statistical models)
+    - Machine learning approaches
+    - Definition of interface residues on training structures is key
+    - Geometric (Distance based)
+    - Optimal Docking Area (ODA), based in desolvation energy (ASA)
 
     <img src="assets/oda.png" style="width:100%;" class="fancyimage"/>
 
