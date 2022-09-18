@@ -14,7 +14,7 @@ navbar:
   title: '<img src="assets/logo.svg" id="logo" style="height:20px;margin:0;"/>'
   type: default
   logo:
-    image: "assets/logo.svg"
+    image: "assets/dabadav.svg"
     href: https://royfrancis.github.io/workshop-template-rmd-travis
   right:
     - text: Home
